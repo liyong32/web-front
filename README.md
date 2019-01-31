@@ -29,7 +29,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ? Target directory exists. Continue? Yes
 ? Project name web-front
 ? Project description A Vue.js project
-? Author liyong_gc <liyong_gc@huoyunren.com>
+? Author liyong_gc <liyong_gc@126.com>
 ? Vue build standalone
 ? Install vue-router? Yes
 ? Use ESLint to lint your code? No
