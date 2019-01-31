@@ -22,13 +22,14 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 后台管理web
 
-1.node -v  npm -v
-2.npm install vue-cli -g
-3.vue init webpack
+1.node -v npm -v 
+2.npm install vue-cli -g 
+3.vue init webpack web-front
 
-Project name web-front
+? Target directory exists. Continue? Yes
+? Project name web-front
 ? Project description A Vue.js project
-? Author liyong_gc <liyong_gc@126.com>
+? Author liyong_gc <liyong_gc@huoyunren.com>
 ? Vue build standalone
 ? Install vue-router? Yes
 ? Use ESLint to lint your code? No
@@ -36,9 +37,13 @@ Project name web-front
 ? Setup e2e tests with Nightwatch? No
 ? Should we run `npm install` for you after the project has been created? (recommended) npm
 
-4. 安装扩展
-npm install -S echarts
-npm install -S element-ui
+   vue-cli · Generated "web-front".
+   
+安装扩展 npm install -S echarts npm install -S element-ui
 
-5. 运行 
- npm run dev
+运行 npm run dev
+
+To get started:
+
+  cd web-front
+  npm run dev
