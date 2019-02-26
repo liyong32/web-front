@@ -1,0 +1,302 @@
+.a-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+}
+.a-link:link,
+.a-link:active,
+.a-link:visited,
+.a-link:hover{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.normal-contain {
+    background-color: #F3F3F3;
+}
+// flex start;
+.flex {
+    display: flex;
+}
+.flex-1 {
+    flex: 1;
+}
+.flex-2 {
+    flex: 2;
+}
+.flex-3 {
+    flex: 3;
+}
+.flex-4 {
+    flex: 4;
+}
+.clearFix::after {
+    content: "";
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+.flex {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+.flexOne {
+    flex: 1;
+}
+// flex end;
+
+// float start;
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+// float end;
+
+// position start;
+.rel {
+    position: relative;
+}
+.abs {
+    position: absolute;
+}
+// 外边距
+.mt-10 {
+    margin-top: 10px;
+}
+.pl-20 {
+    padding-left: 20px;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+// 文字缩进
+.text-indent {
+    text-indent: 2em;
+}
+// 单行溢出隐藏
+.txt-cover {
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+}
+
+// 多行溢出隐藏
+.text-cover-2 {
+   display: box;
+   box-orient: vertical;
+   line-clamp: 2;
+   overflow: hidden;
+}
+// 文字溢出隐藏
+.row {
+    position: relative;
+    line-height: 20px;
+    max-height:20px;
+    overflow: hidden;
+}
+.row::after{
+    content: "....";
+    color: #000;
+    position: absolute;
+    bottom: 0; right: 0;
+    padding-left:60px;
+    background: -webkit-linear-gradient(left, transparent, #dde9f1 70%);
+    background: -o-linear-gradient(right, transparent, #dde9f1 70%);
+    background: -moz-linear-gradient(right, transparent, #dde9f1 70%);
+    background: linear-gradient(to right, transparent,#dde9f1 70%);
+}
+.btn-text {
+    &.primary {
+        color: #108ee9;
+    }
+    &.warning {
+        color: #ffbf00;
+    }
+    &.suc {
+        color: green;
+    }
+    &.red {
+        color: red;
+    }
+}
+
+.search-form {
+  min-height: 72px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15px 15px 5px 15px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.08);
+  .ant-form-item {
+      vertical-align: middle;
+      margin-bottom: 10px;
+  }
+  .error {
+      .ant-select-selection {
+        border-color: red;
+      }
+      .ant-select-selection__placeholder {
+        color: red;
+      }
+  }
+}
+
+.search-list-body {
+    padding: 15px;
+    background-color: #F3F3F3;
+    .table, .ant-table-thead th  {
+        background-color: #fff;
+    }
+    .ant-table {
+        .ant-table-tbody > tr > td, .ant-table-thead > tr > th {
+            text-align: center;
+        }
+    }
+    .ant-pagination.mini {
+        .ant-pagination-item + .ant-pagination-item{
+            margin-left: 5px;
+        }
+    }
+}
+
+.options-contain {
+    padding: 0 0 15px;
+    > button {
+        vertical-align: middle;
+    }
+}
+
+.search-list-content table {
+  background-color: #fff;
+}
+
+.option-btn {
+    // text-decoration: underline;
+    cursor: pointer;
+    > span {
+        > i, > span {
+            vertical-align: middle;
+        }
+    }
+}
+
+.option-btn + .option-btn{
+    margin-left: 15px;
+}
+
+.config-btn {
+    color: #108ee9
+}
+
+.edit-btn {
+    color: #00a854
+}
+
+.del-btn {
+    color: #ffbf00
+}
+
+// element-ui 样式
+.ant-form-item-control {
+    line-height: 23px;
+    > div , > span {
+        vertical-align: middle;
+    }
+}
+.user-date-picker.el-input.el-input--small {
+    height: 28px;
+    .el-input__inner {
+        height: 28px;
+    }
+}
+.el-range-editor--small,.el-input--small {
+    &.el-input__inner {
+        height: 28px;
+        border: 1px solid #d9d9d9;
+        color: rgba(0, 0, 0, 0.65);
+    }
+    .el-range-separator {
+        line-height: 21px;
+    }
+    .el-range-input {
+        font-size: 12px;
+    }
+}
+.ant-cascader-menus {
+    overflow-x: hidden !important;
+}
+
+.popover-self-contain {
+    position: relative;
+    .popover-self-box {
+        top: 36px;
+        z-index: 9;
+        right: 0;
+        position: absolute;
+        width: 150px;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-radius: 4px;
+        box-shadow: 0 1px 6px rgba(0,0,0,.2);
+        .popover-self-title {
+            text-align: left;
+            margin: 0;
+            padding: 0 16px;
+            line-height: 32px;
+            height: 32px;
+            border-bottom: 1px solid #e9e9e9;
+            color: rgba(0,0,0,.65);
+            font-weight: 500;
+        }
+        .popover-arrow {
+            border-top-width: 0;
+            border-bottom-color: hsla(0,0%,85%,.7);
+            top: -10px;
+            right: 10px;
+            border-width: 5px;
+            position: absolute;
+            display: block;
+            width: 0;
+            height: 0;
+            border-color: transparent;
+            border-style: solid;
+            &:after {
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-color: transparent;
+                border-style: solid;
+                display: block;
+                top: 1px;
+                border-width: 4px;
+                margin-left: -4px;
+                border-top-width: 0;
+                border-bottom-color: #fff;
+                content: "";
+            }
+        }
+    }
+}
+
+.v-name-tips {
+    font-size: 10px;
+    padding: 2px 8px;
+    color: #f56a00;
+    background: #fde3cf;
+    border-color: #fde3cf;
+    border-radius: 4px;
+    border: 1px solid #ffa4a4;
+}
+
+.v-name-tips + .v-name-tips {
+    margin-left: 5px;
+}
